@@ -1,0 +1,5 @@
+Mission Journal website - PART 2 of 2
+
+This part holds the remaining full-size photos only.
+Extract it into the SAME place as Part 1 so the 'mission-journal'
+folders merge. Part 1 has everything else.

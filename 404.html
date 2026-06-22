@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>(function(){try{var t=localStorage.getItem('mj-theme');if(!t){t=(window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches)?'dark':'light';}document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+<title>Lost — Mission Journal</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,500;1,6..72,500&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#F7F4EC;--ink:#21242B;--ink-soft:#5C616B;--red:#BB4330;--blue:#294A6E;
+ --serif:'Newsreader',Georgia,'Times New Roman',serif;--mono:'IBM Plex Mono',ui-monospace,Menlo,Consolas,monospace;color-scheme:light;}
+[data-theme="dark"]{--paper:#201F1B;--ink:#ECE7DA;--ink-soft:#A8A292;--red:#E0876A;--blue:#86ABD6;color-scheme:dark;}
+[data-theme="midnight"]{--paper:#0E1117;--ink:#D7DEEA;--ink-soft:#888F9F;--red:#E58C6F;--blue:#83B2E8;color-scheme:dark;}
+*{box-sizing:border-box;}
+body{margin:0;min-height:100vh;min-height:100svh;display:flex;flex-direction:column;background:var(--paper);color:var(--ink);font-family:var(--serif);}
+.airmail{height:6px;background:repeating-linear-gradient(-45deg,var(--red) 0 13px,var(--paper) 13px 19px,var(--blue) 19px 32px,var(--paper) 32px 38px);opacity:.9;}
+.box{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:2.5rem 1.4rem;}
+.mark{font-family:var(--mono);color:var(--red);font-size:clamp(2.6rem,12vw,4.2rem);letter-spacing:.06em;margin:0 0 1.1rem;}
+.eyebrow{font-family:var(--mono);font-size:.76rem;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-soft);margin:0;}
+h1{font-family:var(--serif);font-style:italic;font-weight:500;font-size:clamp(1.9rem,6vw,2.8rem);line-height:1.08;letter-spacing:-.01em;margin:.5rem 0 .7rem;}
+.sub{color:var(--ink-soft);font-size:1.12rem;max-width:32rem;margin:0 auto 1.9rem;line-height:1.5;}
+.btn{font-family:var(--mono);font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;color:var(--paper);background:var(--red);padding:.75rem 1.3rem;border-radius:999px;display:inline-block;}
+.btn:hover{filter:brightness(1.07);}
+.btn:focus-visible{outline:2.5px solid var(--blue);outline-offset:3px;}
+@media (prefers-reduced-motion:reduce){*{transition:none !important;}}
+</style>
+</head>
+<body>
+<div class="airmail"></div>
+<!-- Hosting in a SUBFOLDER (e.g. GitHub project pages at /repo/)? Change the "/" in the link below to your path, e.g. "/repo/". -->
+<main class="box">
+  <p class="mark" title="Praise the Sun">\[T]/</p>
+  <p class="eyebrow">Error 404</p>
+  <h1>This page is lost to the abyss</h1>
+  <p class="sub">That link doesn&rsquo;t lead anywhere &mdash; but two years of letters are still right where you left them.</p>
+  <a class="btn" href="/">Praise the sun, head back</a>
+</main>
+</body>
+</html>
