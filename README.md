@@ -16,16 +16,14 @@ Upload the **contents of this folder** to any static host:
 All links are relative, so a subfolder works fine.
 
 ## Pages
-- `index.html` — landing page, all 45 letters grouped by year
+- `index.html` — landing page, all 72 letters grouped by year
 - `about.html` — about the collection
 - `posts/` — one .html page per weekly letter
 
-## Light / Dark / Midnight
-A theme toggle (sun / moon / stars) sits in the navbar. The choice is saved in
-the browser (localStorage) and applied before the page paints, so it never
-flickers. With no saved choice, it follows the visitor's OS light/dark setting.
-Midnight is opt-in. The logic is in `assets/theme.js`; the no-flash snippet is
-inline in each page's <head>.
+## Design
+Styled to match [colbywonn.com](https://colbywonn.com): white page, navy
+accents, Quantico for headings, Poppins for body text, and the same pinned
+header and footer. Light only.
 
 ## Keyboard shortcuts
 On a letter page, the Left and Right arrow keys jump to the previous and next
@@ -50,20 +48,17 @@ images, so you get unstyled text and no photos. Serve it instead:
 ```
 index.html          landing page
 about.html          about page
-assets/style.css    the one stylesheet — themes + layout live here
-assets/theme.js     theme toggle behavior
+assets/style.css    the one stylesheet
+assets/nav.js       arrow-key navigation between letters
+assets/fonts/       self-hosted Quantico and Poppins
 posts/              one .html per letter
 images/<post>/      that letter's photos (resized to ~1600px for the web)
 thumbs/<post>.jpg   small previews for the landing page
 ```
 
 ## Customizing
-- **Colors** live at the top of `assets/style.css`: the `:root` block is the
-  light theme; `[data-theme="dark"]` and `[data-theme="midnight"]` override it.
-- **Type & layout** sizing uses `clamp()`, so it scales smoothly with the window.
+- **Colors and fonts** live in the `:root` block at the top of `assets/style.css`.
 - **Site title / intro** are near the top of `index.html`; the bio is in `about.html`.
-- **Fonts** (Newsreader + IBM Plex Mono) load from Google Fonts; swap the
-  `<link>` in each page's <head> to self-host them.
 
 ## Notes
 - Letters are ordered by the date each email was sent.
